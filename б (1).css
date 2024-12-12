@@ -1,0 +1,466 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+.main-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffe4e1;
+}
+
+.main-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    background-color: #ff69b4;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff3385;
+}
+
+/* Catalog Section */
+.catalog {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.catalog h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Subscribe Section */
+.subscribe {
+    background-color: #ff69b4;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.subscribe form {
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: #ff69b4;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #ffe4e1;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.review h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffe4e1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.contact li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Additional Sections */
+
+/* Shop */
+.shop .product {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.shop .product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.shop .product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.shop .product button:hover {
+    background-color: #45a049;
+}
+
+/* Gallery */
+.gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .gallery-item {
+    width: 45%;
+    margin: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Feedback */
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback input, .feedback textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.feedback button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .box-container, .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, .review {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .shop .product {
+        width: 90%;
+    }
+}
+
+/* Gallery Section */
+.gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery .gallery-item {
+    width: 45%;  /* Adjust to have 2 items per row */
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;  /* Limit image height */
+    border-radius: 8px;
+    object-fit: cover;  /* Ensure the image covers the container */
+}
+
+.gallery .gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .gallery .gallery-item {
+        width: 100%;  /* Make gallery items stack on smaller screens */
+    }
+}
+/* Жалпы навигация стилі */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size: 18px;
+}
+
+/* Выпадающий тізім стилі */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown:hover .dropdown-menu {
+    display: block;  /* Тізімге тиіп кеткенде көрсету */
+}
+
+nav ul li .dropdown-menu {
+    display: none;  /* Бастапқыда жасырылған */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1;
+}
+
+nav ul li .dropdown-menu li {
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-menu li a {
+    padding: 10px 20px;
+    color: white;
+    display: block;
+    font-size: 16px;
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: #666;
+}
+
+/* Түймелердің үстінен апарғанда эффект */
+nav ul li a:hover {
+    background-color: #555;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-section {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social, .footer-apps, .footer-info, .footer-payment-methods {
+    margin-top: 20px;
+}
+
+.footer-social ul, .footer-apps ul, .footer-payment-methods ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social ul li, .footer-apps ul li, .footer-payment-methods ul li {
+    display: inline-block;
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.footer-payment-methods ul li img {
+    width: 40px;
+    height: auto;
+}
